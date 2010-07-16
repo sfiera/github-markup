@@ -18,6 +18,12 @@ markup(:creole, /creole/) do |content|
   Creole.creolize(content)
 end
 
+markup(:ronn, /ronn/) do |content|
+  options = {}
+  # TODO: options['date'] = last modified date?
+  Ronn::Document.new(nil, options) { content }.convert('html_fragment')
+end
+
 command(:rest2html, /re?st(\.txt)?/)
 
 command('asciidoc -s --backend=xhtml11 -o - -', /asciidoc/)
