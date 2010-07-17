@@ -51,7 +51,10 @@ along with a `README.extension.html`. As you may imagine, the
 
 Now run the tests: `rake`
 
-If nothing complains, congratulations!
+If nothing complains, congratulations!  Add your new markup type to
+the list of supported types in this README, then follow the
+instructions in `Contributing` to contribute your change back to
+github.
 
 
 ### Classes
